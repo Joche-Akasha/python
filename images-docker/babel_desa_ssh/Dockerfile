@@ -1,4 +1,4 @@
-FROM aka/babel-desa
+FROM aka/babel_desa
 
 RUN apt-get install -y openssh-server
 
@@ -8,6 +8,6 @@ RUN mkdir /var/run/sshd
 RUN echo 'usu1:usu1' | chpasswd
 
 #Startup
-RUN /etc/init.d/ssh start 
+CMD ["service ssh start"] 
 EXPOSE 22 
 
