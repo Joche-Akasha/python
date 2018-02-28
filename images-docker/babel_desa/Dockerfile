@@ -1,4 +1,4 @@
-FROM aka/ubuntu-python
+FROM aka/ubu-python
 
 RUN apt-get install -y git
 RUN apt-get install -y python-pip
